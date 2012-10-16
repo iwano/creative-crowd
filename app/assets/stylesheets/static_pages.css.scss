@@ -1,3 +1,38 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* =Header
+-----------------------------------------------------------------------------*/
+#main-header{
+	background: #000;
+	padding:5px;
+	a{
+		text-decoration: none;
+		color:#DDD;
+	}
+	#logo{
+		font-size: 2em;
+		position: relative;
+		top:5px;
+	}
+	ul{
+		list-style-type: none;
+		li{
+			float:left;
+			a{
+				padding:10px;
+				font-size: 1.4em;
+				line-height: 1.5em;
+			}
+			a:hover, a:active{
+				background:#FFF;
+				color:#222;
+			}
+		}
+		li.active a{
+			background: #FFF;
+			color:#222;
+		}
+	}
+}
