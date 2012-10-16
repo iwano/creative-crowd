@@ -11,9 +11,16 @@
  *= require_self
  *= require_tree .
 */
+body{
+	font-family: 'Oswald', sans-serif;
+}
 
+h1{
+	font-family: 'Six Caps', sans-serif;
+
+}
 .wrapper{
-	width:940px;
+	width:807px;
 	margin:0 auto;
 }
 
