@@ -4,9 +4,16 @@
 
 /* =Header
 -----------------------------------------------------------------------------*/
+$turquoise: #88cccd;	/*home background*/
+$lightcyan: #d5eff0;	/*article background*/
+$cadetblue: #6a8687;	/*article footer p*/
+$whitegray: #d5efee;	/*headers*/
+$tomato: #d04524;		/*mistery-box background*/
+
 body{
-	background:#88cccd;
+	background: $turquoise;
 	background-image: url(bkgtexture.png);
+	background-repeat: no-repeat;
 }
 #main-header{
 	background: #000;
@@ -44,12 +51,17 @@ body{
 }
 
 article{
-	background:#d5eff0;
+	background:$lightcyan;
 	padding:2px;
 	display: inline-block;
 	margin-bottom: 2em;
 	p{
 		margin-bottom: 0;
+		color:$cadetblue;
+		font-size: 15px;
+		text-transform: uppercase;
+		padding:0 0 3px 5px;
+		display: inline-block;
 	}
 }
 
@@ -60,9 +72,12 @@ section{
 
 .main-h1{
 	font-size: 85px;
-	color:#d5efee;
+	color:$whitegray;
 	font-weight: normal;
 	text-transform: uppercase;
+	position:relative;
+	top:45px;
+	right:-10px;
 }
 
 .sp2{
@@ -77,6 +92,7 @@ section{
 
 #main-footer{
 	clear: both;
+	text-align: center;
 }
 
 #h1-logo{
@@ -86,4 +102,14 @@ section{
 	height: 141px;
 	width:141px;
 	float:left;
+	margin:.8em 0 .8em 0;
+}
+
+.plus{
+	float:right;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	&:hover{
+		opacity:.6;
+	}
 }
