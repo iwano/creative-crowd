@@ -13,3 +13,25 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+
+	var url = window.location.href;
+	url = url.substr(url.lastIndexOf("/") + 1);
+	$('#main-nav ul li a.active').removeClass('active');
+	$("#main-nav ul li").find("a[href='/" + url + "']").addClass("active");
+
+	if (url == ''){
+		$('body').css({'background':'#88cccd', 'background-image':'url(/assets/bkgtexture.png)', 'background-repeat':'no-repeat'});
+	}else if (url == 'mistery_box'){
+		$('body').css('background','#d04524');
+	}else if (url == 'store'){
+		$('body').css('background','#DDD');
+	}
+
+	$('#main-nav ul li a').click(function(e){
+		if ($(this).hasClass('active')){
+			e.preventDefault();
+		}
+	});
+});

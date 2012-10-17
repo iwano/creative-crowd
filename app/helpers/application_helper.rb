@@ -9,8 +9,4 @@ module ApplicationHelper
     end
   end
 
- def is_active(controller, action)  
-   return "active" if params[:controller] == controller && params[:action] == action
- end
-
 end
